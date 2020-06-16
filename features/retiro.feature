@@ -1,6 +1,8 @@
 Feature:
 
-sdfsdfsdf
+Como 
+Quiero
+Para
 
 Scenario: 
 

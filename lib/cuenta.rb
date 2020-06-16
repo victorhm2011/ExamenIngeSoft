@@ -8,6 +8,9 @@ class cuenta
     end
 
     def retirar(montoARetirar)
+        if(montoARetirar>@monto)
+            return "La cuenta actual no dispone del monto a retirar, intenta con otro monto menor"
+        end
         @monto=@monto-montoARetirar
     end
 

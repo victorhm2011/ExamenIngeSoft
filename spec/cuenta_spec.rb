@@ -18,6 +18,12 @@ Rspec.describe "cuenta" do
         expect(@cuenta.getMonto()).to eq (150)
     end
 
+    it 'retirar monto mayor al de la cuenta' do
+        @cuenta=cuenta.new(100)
+        @retiro=@cuenta.retirar(150)
+        expect(retiro).to eq ("La cuenta actual no dispone del monto a retirar, intenta con otro monto menor")
+    end
+
 
 
 end
